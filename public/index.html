@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>UYB Async Task</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
+    <style>
+        .centered {
+            text-align:center;
+        }
+        
+        #users {
+            list-style-type: none;
+        }
+        
+        #users li{
+            display:inline-block;
+            margin-right:30px;
+        }
+        
+        #users li.online::after {
+            content:'online';
+            color:#468847;
+        }
+        
+        #users li.offline::after {
+            content:'offline';
+            color:#b94a48;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-header">
+        <h1>UYB Async Task</h1>
+        
+        <div class="centered">
+            <button id="btnStart" type="button" class="btn btn-primary" data-toggle="button" >Start</button>
+        </div>
+        
+      </div>
+      <div class="row">
+        <div class="span12">
+            
+            <div id="divAlert" class="alert hide"></div>
+        
+            <ul id="users"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
