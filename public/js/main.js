@@ -21,7 +21,7 @@ $(function(){
             return;
         }
         
-        $('#divAlert').show();
+        $('#divAlert').removeClass('alert-success').show();
         $('#users').empty();
         btn.addClass('disabled');
         
@@ -98,7 +98,9 @@ $(function(){
             });
                 
             //TODO use templating lib
-            $('#divAlert').html('<strong>Done !</strong> Total <strong>'+users.length+'</strong> requests made. Online: <strong>'+online+'</strong>. Offline: <strong>'+offline+'</strong>');
+            $('#divAlert')
+				.addClass('alert-success')
+				.html('<strong>Done !</strong> Total <strong>'+users.length+'</strong> requests made. Online: <strong>'+online+'</strong>. Offline: <strong>'+offline+'</strong>');
             
         });
     }
