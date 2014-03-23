@@ -14,6 +14,6 @@ http://188.226.170.164:3000/
 
 Installing & Running
 ---------
-[Once you have your environment setup](http://docs.angularjs.org/misc/contribute) just run:
-
+[
     npm install
+    node server.js
