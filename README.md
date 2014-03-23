@@ -14,6 +14,7 @@ http://188.226.170.164:3000/
 
 Installing & Running
 ---------
-[
-    npm install
-    node server.js
+````
+npm install
+node server.js
+````
